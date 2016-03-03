@@ -12,8 +12,8 @@
 #define APPLICATION_WINDOW [UIApplication sharedApplication].delegate.window
 
 #import "ViewController.h"
-#import "UIImageEffects.h"
 #import <Masonry.h>
+#import "UIImage+WLYEffects.h"
 
 static CGFloat const popViewHeight = 300;
 
@@ -164,7 +164,7 @@ static CGFloat const popViewHeight = 300;
     NSLog(@"filterTheImage");
     CGFloat radius = [self.radiusField.text integerValue] > 0 ? [self.radiusField.text integerValue] : 30;
     CGFloat deltal = [self.saturationDeltaFactorField.text integerValue] > 0 ? [self.saturationDeltaFactorField.text integerValue] : 1.5;
-    UIImage *filterImage = [UIImageEffects imageByApplyingBlurToImage:[UIImage imageNamed:@"testImage"]
+    UIImage *filterImage = [UIImage imageByApplyingBlurToImage:[UIImage imageNamed:@"testImage"]
                                                            withRadius:radius
                                                             tintColor:[UIColor colorWithWhite:1 alpha:0.2]
                                                 saturationDeltaFactor:deltal
@@ -209,7 +209,7 @@ static CGFloat const popViewHeight = 300;
     
     UIImageView *backgroundView = [[UIImageView alloc] init];
     UIImage *snapShot = [self takeSnapshotOfView:self.view withRect:self.view.frame];
-    UIImage *filterImage = [UIImageEffects imageByApplyingBlurToImage:snapShot
+    UIImage *filterImage = [UIImage imageByApplyingBlurToImage:snapShot
                                                            withRadius:30
                                                             tintColor:[UIColor colorWithWhite:1 alpha:0.2]
                                                 saturationDeltaFactor:1.5

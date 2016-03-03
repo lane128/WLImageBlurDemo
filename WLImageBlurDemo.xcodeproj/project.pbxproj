@@ -14,7 +14,7 @@
 		3D4695581C85817B00DA7572 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D4695571C85817B00DA7572 /* Assets.xcassets */; };
 		3D46955B1C85817B00DA7572 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D4695591C85817B00DA7572 /* LaunchScreen.storyboard */; };
 		3D4695661C85817B00DA7572 /* WLImageBlurDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4695651C85817B00DA7572 /* WLImageBlurDemoTests.m */; };
-		3D4695721C8588F600DA7572 /* UIImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4695711C8588F600DA7572 /* UIImageEffects.m */; };
+		3D6267181C88A84000864940 /* UIImage+WLYEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D6267171C88A84000864940 /* UIImage+WLYEffects.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +41,8 @@
 		3D4695611C85817B00DA7572 /* WLImageBlurDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WLImageBlurDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D4695651C85817B00DA7572 /* WLImageBlurDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLImageBlurDemoTests.m; sourceTree = "<group>"; };
 		3D4695671C85817B00DA7572 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3D4695701C8588F600DA7572 /* UIImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageEffects.h; sourceTree = "<group>"; };
-		3D4695711C8588F600DA7572 /* UIImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageEffects.m; sourceTree = "<group>"; };
+		3D6267161C88A84000864940 /* UIImage+WLYEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+WLYEffects.h"; sourceTree = "<group>"; };
+		3D6267171C88A84000864940 /* UIImage+WLYEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WLYEffects.m"; sourceTree = "<group>"; };
 		5C2929E69F32CB2EACD13126 /* Pods-WLImageBlurDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WLImageBlurDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-WLImageBlurDemo/Pods-WLImageBlurDemo.release.xcconfig"; sourceTree = "<group>"; };
 		D57A1391ED3024836A3508D5 /* Pods-WLImageBlurDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WLImageBlurDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WLImageBlurDemo/Pods-WLImageBlurDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,12 +89,12 @@
 		3D46954A1C85817B00DA7572 /* WLImageBlurDemo */ = {
 			isa = PBXGroup;
 			children = (
-				3D4695701C8588F600DA7572 /* UIImageEffects.h */,
-				3D4695711C8588F600DA7572 /* UIImageEffects.m */,
 				3D46954E1C85817B00DA7572 /* AppDelegate.h */,
 				3D46954F1C85817B00DA7572 /* AppDelegate.m */,
 				3D4695511C85817B00DA7572 /* ViewController.h */,
 				3D4695521C85817B00DA7572 /* ViewController.m */,
+				3D6267161C88A84000864940 /* UIImage+WLYEffects.h */,
+				3D6267171C88A84000864940 /* UIImage+WLYEffects.m */,
 				3D4695571C85817B00DA7572 /* Assets.xcassets */,
 				3D4695591C85817B00DA7572 /* LaunchScreen.storyboard */,
 				3D46955C1C85817B00DA7572 /* Info.plist */,
@@ -271,9 +271,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D4695721C8588F600DA7572 /* UIImageEffects.m in Sources */,
 				3D4695531C85817B00DA7572 /* ViewController.m in Sources */,
 				3D4695501C85817B00DA7572 /* AppDelegate.m in Sources */,
+				3D6267181C88A84000864940 /* UIImage+WLYEffects.m in Sources */,
 				3D46954D1C85817B00DA7572 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
